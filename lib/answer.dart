@@ -6,7 +6,7 @@ class Answer extends StatelessWidget {
   // type = Function
 
   Answer(this.selectHandler, String this.answerText); 
-  // selectHandler === _answerQuestion(){ setState } 
+  // selectHandler === _answerQuestion( int score ){ setState } 
   // answerText === answer (el)
 
   @override
@@ -17,7 +17,7 @@ class Answer extends StatelessWidget {
         color: Colors.blue,
         textColor: Colors.white,
         child: Text(this.answerText),
-        onPressed: selectHandler,  // null = button disabled
+        onPressed: selectHandler,  // if null = button disabled
       ),
       
     );
